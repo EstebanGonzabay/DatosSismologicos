@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Datos Sismológicos</title>
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/features.css"> <!-- Enlazar tu archivo CSS -->
+</head>
+<body>
+  <h1>Datos Sismológicos</h1>
+  
+  <div class="datos">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>External ID</th>
+          <th>Magnitude</th>
+          <th>Place</th>
+          <th>Time</th>
+          <th>Tsunami</th>
+          <th>Magnitude Type</th>
+          <th>Title</th>
+          <th>Longitude</th>
+          <th>Latitude</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @features.each do |feature| %>
+          <tr>
+            <td><%= feature.id %></td>
+            <td><%= feature.external_id %></td>
+            <td><%= feature.magnitude %></td>
+            <td><%= feature.place %></td>
+            <td><%= feature.time %></td>
+            <td><%= feature.tsunami ? 'Yes' : 'No' %></td>
+            <td><%= feature.mag_type %></td>
+            <td><%= feature.title %></td>
+            <td><%= feature.longitude %></td>
+            <td><%= feature.latitude %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+/* Estilos para la tabla */
+.datos table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* Estilos para las celdas de encabezado */
+.datos th {
+  background-color: #1e33f0; /* Gris claro para el fondo */
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para las celdas de datos */
+.datos td {
+  border: 1px solid #000000;
+  padding: 8px;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos alternativos para filas impares */
+.datos tr:nth-child(odd) {
+  background-color: #ffffff; /* Gris más claro para filas impares */
+}
+
+/* Estilos para el título */
+h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333; /* Color de texto oscuro */
+}
